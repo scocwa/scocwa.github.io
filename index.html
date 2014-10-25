@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Team Scocwa</title>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="bower_components/bootswatch/journal/bootstrap.min.css" />
+
+    <style>
+      #downarrow {
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+      }
+      .container {
+        background-color: #f0f0f0;
+        padding-left: 2em;
+        padding-right: 2em;
+      }
+      .jumbotron {
+        background-color: #e6e6e6;
+      }
+      body {
+        background-color: #ababab;
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Ad -->
+    <div style="position: absolute; top: 0px;">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- scocwa -->
+      <ins style="display:block;width:728px;height:90px" class="adsbygoogle center-block" data-sr="enter from the top and scale up 30% over 2.5s" data-ad-client="ca-pub-9246593173972688" data-ad-slot="5930043259"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    <div class="container" id="page">
+      <div class="page-header">
+        <div class="row">
+          <div class="col-lg-8 col-md-7 col-sm-6">
+            <h1 data-sr="enter from the top and scale up 30% over 1.5s" style="font-size: 4em;">Scocwa</h1>
+            <p class="lead" data-sr="enter from the top and scale up 30% over 1.5s" style="font-size: 22.5px;">Tools for High Schoolers</p>
+          </div>
+        </div>
+      </div>
+      <div data-sr="over 2s ease-in 30px and ease-out 100px" class="jumbotron">
+        <h2>CrushTest</h2>
+        <p>Enter your name and your crush's and see if they have a crush on you!</p>
+        <p><a class="btn btn-primary btn-lg" href="/ct">Go &gt;</a></p>
+      </div>
+      <div data-sr="over 3s ease-in 30px and ease-out 100px" class="jumbotron">
+        <h2>More coming soon</h2>
+      </div>
+    </div>
+
+    <img src="http://www.clker.com/cliparts/y/m/X/o/s/R/down-arrow-circle-hi.png" width="64px" title="There's more... scroll down!" id="downarrow" />
+
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- endbower -->
+    <script src="bower_components/scrollReveal.js/dist/scrollReveal.js"></script>
+    <script>
+      window.sr = new scrollReveal({delay: 'always', vFactor: .25, reset: true});
+      window.onscroll = function(e) {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+          $("#downarrow").addClass("sow-invisible")
+          $("#downarrow").fadeOut();
+        } else if ($("#downarrow").hasClass("sow-invisible")) {
+          $("#downarrow").removeClass("sow-invisible")
+          $("#downarrow").fadeIn();
+        }
+      };
+    </script>
+  </body>
+</html>
